@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="view_list">
+        <item>list_info</item>
+        <item>list</item>
+    </string-array>
+
+    <string-array name="fav_list">
+        <item>Add to Fav</item>
+        <item>TV Channel</item>
+        <item>EPG</item>
+    </string-array>
+    <string-array name="setting_list">
+        <item>Parental control</item>
+        <!--<item>Change portal</item>-->
+        <item>Reload portal</item>
+        <item>Reboot device</item>
+        <item>OSD Time</item>
+        <item>User Account</item>
+        <item>Log out</item>
+    </string-array>
+    <string-array name="package_list0">
+        <item>View</item>
+        <item>Sort</item>
+        <item>Favorite</item>
+        <!--<item>Track</item>-->
+        <item>Screen ratio</item>
+    </string-array>
+    <string-array name="package_list">
+        <item>View</item>
+        <item>Sort</item>
+        <item>Favorite</item>
+        <item>Subtitle</item>
+        <item>Audio Track</item>
+        <item>Screen ratio</item>
+    </string-array>
+    <string-array name="package_list1">
+        <item>View</item>
+        <item>Sort</item>
+        <item>Favorite</item>
+        <item>Search</item>
+    </string-array>
+    <string-array name="package_list2">
+        <item>Subtitle</item>
+        <item>Audio Track</item>
+        <item>Screen ratio</item>
+    </string-array>
+    <string-array name="package_list3">
+        <item>Track</item>
+        <item>Screen ratio</item>
+    </string-array>
+</resources>

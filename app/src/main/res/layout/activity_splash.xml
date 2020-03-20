@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kds.gold.acebird.activities.LoginActivoty"
+    android:id="@+id/main_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"/>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/icon"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_margin="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/round_white">
+
+                    <EditText
+                        android:id="@+id/txt_portal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="Portal Url"
+                        android:text="http://newstudio.ddns.net:7890/"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:inputType="textUri"
+                        android:maxLines="1"
+                        android:paddingLeft="8dp"
+                        android:lines="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_white"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/txt_mac"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="mac address"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:inputType="text"
+                        android:text="00:1A:79:00:6D:33"
+                        android:maxLines="1"
+                        android:paddingLeft="8dp"
+                        android:lines="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mac address : "
+                        android:textColor="@color/white"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:visibility="visible"
+                        android:id="@+id/login_mac_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:gravity="center_horizontal"
+                        android:id="@+id/checkbox"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:button="@drawable/style_checkbox"/>
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remember me"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="10sp"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:background="@drawable/btn_drawable"
+                    android:layout_marginTop="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

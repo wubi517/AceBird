@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/main_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:clickable="false"
+    android:focusableInTouchMode="false"
+    android:focusable="false"
+    >
+    <TextView
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="12:00"
+        android:id="@+id/main_date_num"
+        android:textColor="@color/white"
+        android:layout_width="50dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5sp"
+        android:text="Sky Sports"
+        android:id="@+id/main_epg_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+</LinearLayout>

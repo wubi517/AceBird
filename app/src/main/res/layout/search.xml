@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400sp"
+    android:layout_height="130sp"
+    android:background="@drawable/item_back">
+    <EditText
+        android:id="@+id/txt_pin"
+        android:paddingLeft="12dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:inputType="text"
+        android:singleLine="true"
+        android:layout_width="200sp"
+        android:layout_height="30sp"
+        android:background="@drawable/input"/>
+    <Button
+        android:id="@+id/btn_ok"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10sp"
+        android:layout_marginBottom="5sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_search"
+        android:layout_width="140sp"
+        android:layout_height="30sp" >
+    </Button>
+    <Button
+        android:id="@+id/btn_cancel"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="5sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_search"
+        android:layout_width="140sp"
+        android:layout_height="30sp">
+     <requestFocus />
+   </Button>
+</RelativeLayout>

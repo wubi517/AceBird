@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kds.gold.acebird">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+    <application
+        android:name="com.kds.gold.acebird.apps.MyApp"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.kds.gold.acebird.activities.SplashActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.kds.gold.acebird.apps.BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.kds.gold.acebird.activities.WelcomeActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kds.gold.acebird.activities.GuideActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kds.gold.acebird.activities.LoginActivoty"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kds.gold.acebird.activities.PreviewChannelAcitivoty"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kds.gold.acebird.activities.PreviewVodActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kds.gold.acebird.activities.VodPlayerActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kds.gold.acebird.activities.VodInFoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kds.gold.acebird.activities.PreviewSeriesActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kds.gold.acebird.activities.PreviewSeasonActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kds.gold.acebird.activities.SeriesPlayerActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kds.gold.acebird.activities.PreviewChannelPhoneAcitivoty"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.kds.gold.acebird.activities.RadioActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.kds.gold.acebird.ijkplayer.activity.IjkChannelPlay"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.kds.gold.acebird.ijkplayer.activity.VodIjkPlayerActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.kds.gold.acebird.ijkplayer.activity.SeriesIjkPlayerActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>
